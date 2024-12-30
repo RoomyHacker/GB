@@ -1,0 +1,167 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Gandaki Bricks</title>  
+    <style>  
+        /* Dark Theme CSS */  
+        body {  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 0;  
+            background-color: #121212;  
+            color: #e0e0e0;  
+            line-height: 1.6;  
+        }  
+
+        header.hero {  
+            background: linear-gradient(to right, #1e90ff, #32cd32, #ff4500);  
+            text-align: center;  
+            padding: 80px 20px;  
+        }  
+
+        .hero-text h1 {  
+            font-size: 3.5rem;  
+            margin-bottom: 10px;  
+        }  
+
+        .hero-text p {  
+            font-size: 1.5rem;  
+            margin-bottom: 20px;  
+        }  
+
+        .navbar-tabs {  
+            display: flex; /* Arrange tabs in a row */  
+            justify-content: center;  
+            padding: 10px 0;  
+            background: #1e1e1e; /* Match navbar background */  
+        }  
+
+        .navbar-tabs a {  
+            padding: 15px;  
+            text-decoration: none;  
+            color: #e0e0e0;  
+            font-size: 1.2rem;  
+            margin: 0 10px;  
+            border-bottom: 2px solid transparent;  
+            transition: border-color 0.3s;  
+
+        }  
+
+        .navbar-tabs a:hover {  
+            border-bottom: 2px solid #1e90ff;  
+        }  
+
+        .section {  
+            padding: 40px 20px;  
+            text-align: center;  
+            margin-top: 20px;  
+            background: #1e1e1e; /* Background for sections */  
+        }  
+
+        .section h2 {  
+            font-size: 2rem;  
+            margin-bottom: 20px;  
+            color: #1e90ff;  
+        }  
+
+        .product-gallery {  
+            display: flex;  
+            justify-content: center;  
+            gap: 20px;  
+            flex-wrap: wrap;  
+        }  
+
+        .product {  
+            background: #1e1e1e;  
+            padding: 20px;  
+            border-radius: 10px;  
+            width: 250px;  
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);  
+        }  
+
+        .product h3 {  
+            color: #32cd32;  
+        }  
+
+        footer {  
+            background: #1e1e1e;  
+            color: #e0e0e0;  
+            text-align: center;  
+            padding: 10px 0;  
+            margin-top: 20px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <!-- Header with Navigation -->  
+    <header class="hero">  
+        <div class="logo">  
+            <h1>Gandaki Bricks</h1> <!-- Removed the <img> tag -->  
+        </div>  
+        <div class="hero-text">  
+            <p>Made in Nepal</p>  
+        </div>  
+    </header>  
+
+    <!-- Navigation Tabs -->  
+    <nav class="navbar-tabs">  
+        <a href="#about">About Us</a>  
+        <a href="#products">Products</a>  
+        <a href="#contact">Contact</a>  
+    </nav>  
+
+    <!-- About Section -->  
+    <section id="about" class="section">  
+        <h2>About Gandaki Bricks</h2>  
+        <p>Gandaki Bricks is committed to providing the highest quality bricks that are both durable and environmentally friendly. We build the future, one brick at a time.</p>  
+    </section>  
+
+    <!-- Products Section -->  
+    <section id="products" class="section">  
+        <h2>Our Products</h2>  
+        <div class="product-gallery">  
+            <div class="product">  
+                <h3>Strong Bricks</h3>  
+                <p>Built to last in any environment.</p>  
+            </div>  
+            <div class="product">  
+                <h3>Eco-Friendly Bricks</h3>  
+                <p>Environmentally responsible, quality assured.</p>  
+            </div>  
+            <div class="product">  
+                <h3>Cheap Bricks</h3>  
+                <p>Designed to meet your specific needs.</p>  
+            </div>  
+            <div class="product">  
+                <h3>Long Lasting Bricks</h3>  
+                <p>Durable and reliable for generations.</p>  
+            </div>  
+        </div>  
+    </section>  
+
+    <!-- Contact Section -->  
+    <section id="contact" class="section">  
+        <h2>Contact Us</h2>  
+        <p>Phone: +977 1234567890</p>  
+        <p>Email: info@gandakibricks.com</p>  
+    </section>  
+
+    <footer>  
+        <p>&copy; 2023 Gandaki Bricks. All Rights Reserved.</p>  
+    </footer>  
+
+    <script>  
+        // Functionality for smooth scrolling to sections  
+        document.querySelectorAll('.navbar-tabs a').forEach(anchor => {  
+            anchor.addEventListener('click', function(e) {  
+                e.preventDefault();  
+                document.querySelector(this.getAttribute('href')).scrollIntoView({  
+                    behavior: 'smooth'  
+                });  
+            });  
+        });  
+    </script>  
+</body>  
+</html>
